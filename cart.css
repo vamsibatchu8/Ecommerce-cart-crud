@@ -1,0 +1,115 @@
+/* (A) ENTIRE PAGE */
+#cart-wrap * {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;  
+}
+#cart-wrap {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 10%;
+}
+#cart-products, #cart-items { padding: 10px; }
+#cart-products { flex-grow: 1; }
+#cart-items { width: 180px; }
+input.cart, button.cart {
+  padding: 10px;
+  border: 0;
+  background: #1cd3ef;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cart:hover{
+  background-color: #cd961e;
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000;
+  -webkit-box-align:start;
+}
+
+.navbar a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: #1a1a1a;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: purple;
+}
+
+.navbar a:hover i {
+  color: #fff;
+}
+
+
+/* (B) PRODUCTS LIST */
+#cart-products {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 10px;
+}
+.p-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+.p-img { max-width: 150px; }
+.p-name, .p-price { font-weight: 700; }
+.p-name, .p-desc, .p-price { margin: 5px 0; }
+.p-name {
+  font-size: 1.35em;
+  text-transform: uppercase;
+}
+.p-desc {
+  color: #7c7979;
+  font-size: 0.9em;
+}
+.p-price { color: #e13d16; }
+.p-add { width: 100%; }
+
+/* (C) CURRENT SHOPPING CART */
+#cart-items {
+  background: #31394d;
+  color: #fff;
+  border-radius: 15px;
+}
+.c-item {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-name, .c-total {
+  font-size: 1.05em;
+  font-weight: 700;
+}
+.c-name, .c-total, button.c-empty, button.c-checkout { width: 100%; }
+.c-total, button.c-empty, button.c-checkout { margin-top: 10px; }
+.c-del { width: 25%; }
+.c-qty { width: 75%; }
+.c-empty, .c-checkout { width: 100%; }
+
+/* (D) RESPONSIVE */
+@media screen and (max-width: 640px) {
+  #cart-products {
+    grid-template-columns: 100%;
+  }
+}

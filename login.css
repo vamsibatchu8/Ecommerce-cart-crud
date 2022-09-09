@@ -1,0 +1,137 @@
+
+[
+    class*="fontawesome-"
+]
+:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+.hero{
+    width: 78%;
+    height: 100%;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+body {
+  background: white;
+  color: #414042;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+  margin-top: 0;
+  height: 82vh;
+  background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
+}
+
+p {
+  line-height: 1.5em;
+}
+
+after { clear: both; }
+
+
+.login{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-left: 25%;
+    filter: drop-shadow(0px 4px 70px rgba(0, 0, 0, 0.1));
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    background-image: url('ss.svg');
+    background-repeat: no-repeat;
+    background-position: 40px;
+    background-size: 1000px  500px;
+}
+
+
+.login form {
+  width: 40%;
+  height: 100%;
+  margin-left: 6%;
+  margin-top: 1%;
+  margin-bottom: 15%;
+}
+
+.login form span {
+    width: 34px;
+    height: 16px;
+    margin: 10px;
+    left: calc(50% - 34px/2 - 605px);
+    top: calc(50% - 16px/2 - 183px);
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 16px;
+    align-items: center;
+    color: #414042;
+}
+
+
+.login form input[type="email"] {
+    width: 20rem;
+    height: 50px;
+    margin-bottom: 20px;
+    left: calc(50% - 400px/2 - 421px);
+    top: calc(50% - 50px/2 - 142px);
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #BCBEC0;
+    border-radius: 40px;
+}
+
+.login form input[type="password"] {
+    width: 20rem;
+    height: 50px;
+    margin-bottom: 20px;
+    left: calc(50% - 400px/2 - 421px);
+    top: calc(50% - 50px/2 - 142px);
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #BCBEC0;
+    border-radius: 40px;
+}
+
+.login form input[type="submit"] {
+    width: 20rem;
+    height: 50px;
+    margin-bottom: 20px;
+    left: calc(50% - 400px/2 - 421px);
+    top: calc(50% - 50px/2 + 87px);
+    background: #A93159;
+    border-radius: 40px;
+}
+.login form input[type="submit"]:hover {
+  background: #16aa56;
+}
+
+.ss1{
+    color: #414042;
+    padding: 2%;
+}
+
+.ss2{
+    margin-left: 33%;
+}
+
+.bkimg{
+position: absolute;
+width: 79%;
+height: 80%;
+margin-top: 13%;
+left: 50%;
+
+top: calc(50% - 849px/2 - 0.5px);
+}
+
+@media screen and (max-width: 640px) {
+  .hero {
+    grid-template-columns: 100%;
+  }
+}
+
+
